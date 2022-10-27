@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin-sans',sans-serif;
+}
+
+.main{
+    /* width: 100%; */
+    height: 70vh;
+    background-image:  linear-gradient(rgba(83, 76, 76, 0.7),
+     rgba(39, 42, 43, 0.7)), url('./banner.png'); 
+     background-position: center;
+     background-size: cover;
+     position: relative;
+}
+
+#close-btn,
+.nav-bar{
+    display: none;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(214, 188, 211);
+    align-items: center;
+    height: 90px;
+    padding: 0 5rem;
+}
+
+.nav img{
+    width: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li{
+    list-style-type: none;
+    padding: 0 1.5rem;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+}
+
+.nav-links li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: brown;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+    transition: .4s;
+} 
+
+
+.text{
+    /* width: 50%; */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.text h2{
+    margin-bottom: 0.7rem;
+    color: white;
+    font-size: 2em;
+}
+
+.text h5{
+    margin-bottom: 1.2rem;
+    color: white;
+    font-size: 13px;
+}
+
+.text button{
+    background-color: tomato;
+    border-radius:0;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 400;
+    border: 1px solid transparent;
+}
+
+.text button:hover{
+    background: transparent;
+    transition: .4s;
+    border: 1px solid tomato;
+}
+
+.num{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.glance{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    background: rgb(42, 42, 68);
+    /* margin-bottom: 5%; */
+}
+
+.glances{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.glance-card{
+    text-align: left;
+    line-height: 1.5rem;
+    color: white;
+    margin-left: 20px;
+}
+
+.glance h3{
+    color: white;
+    font-size: 24px;
+}
+
+.atom-head{
+    padding: 5rem;
+    display: flex;
+    /* grid-template-columns: 150px auto auto auto; */
+    /* grid-template-rows: auto auto; */
+     justify-content: space-between;
+    background-color: rgba(250, 215, 239, 0.7);
+    line-height: 1.5rem;
+}
+
+.at-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1.3rem;
+}
+
+.atom-head h3{
+    margin-right: 30%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.atom-head-card{
+    padding: 50px 55px;
+    background: rgba(250, 215, 239, 0.8);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px 0px rgba(185, 179, 179, 0.8);
+}
+
+.atom-head-card h5{
+    font-size: 16px;
+}
+
+.atom-content{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(250, 215, 239, 0.7);
+    width: 100%;
+}
+
+.atom-content img{
+    width: 50%;
+    height: auto;
+}
+.atom-content-text{
+    padding-right: 5rem; 
+    line-height: 1.5rem;
+    margin-top: 0.625rem;
+}
+
+.atom-content-text h6{
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.atom-content-text h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.atom-content-text p{
+    margin-top: 15px;
+}
+
+.atom-content2{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(250, 215, 239, 0.7);
+}
+
+.atom-content2 img{
+    width: 50%;
+    height: auto;
+}
+
+.atom-content-text2{
+    padding-left: 5rem;
+    line-height: 1.5rem;
+    margin-top: 0.625rem;
+}
+
+.atom-content-text2 h6{
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.atom-content-text2 h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.atom-content-text2 p{
+    margin-top: 15px;
+}
+
+.text2{
+    padding: 100px 0;
+    text-align: center;
+    background: tomato;
+}
+
+.text2 h2{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+
+
+.text2 h5{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 13px;
+}
+
+.text2 button{
+    background-color: tomato;
+    border-radius:0;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 400;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    background: black;
+    line-height: 1.5rem;
+}
+
+.footer p{
+    color: white;
+    margin-top: 30px;
+    width: 50%;
+}
+.footer-rest{
+    margin-left: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-rest a{
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.test{
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width:800px){
+    
+   .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -400px;
+         height: 100vh; 
+        width: 350px;
+        background: #60b8ef;
+        box-shadow: 0 2.5rem 3.8rem rgb(0, 0, 0,0.3);
+        padding: 5rem 0 0 0.8rem;
+        transition: .6s;
+        z-index: 999;
+   }
+
+   .nav-links li{
+    margin-bottom: 2.5rem;
+}
+
+#close-btn{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.8rem;
+    display: block;
+    color: #000;
+}
+
+.nav-bar{
+    display: block;
+}
+
+.nav-bar i{
+    font-size: 1.4rem;
+    color: #000;
+    padding-right: 1.2rem;
+}
+
+.display-nav{
+    right: 0px;
+}
+
+.main{
+    height: 60vh;
+}
+
+.text{
+    top: 60%;
+}
+.glance {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.glance-card {
+    text-align: left;
+   margin-top: 1.2rem;
+   margin-left: 0;
+}
+
+.glances{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.35rem;
+    padding-left: 0px;
+}
+
+.atom-head {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.at-cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.1rem;
+    margin-top: 0.85rem;
+    width: 100%;
+}
+
+.atom-content img{
+    width: 300px;
+    height: 400px;
+}
+
+.atom-content-text{
+    padding-right: 5rem;
+    line-height: 1.25rem;
+    margin-top: 0;
+}
+
+.atom-content2 img{
+    width: 300px;
+    height: 350px;
+}
+
+.atom-content-text2{
+    padding-left: 5rem;
+    line-height: 1.25rem;
+    margin-top: 0;
+}
+
+.text2{
+    padding: 50px 0;
+}
+
+.footer img{
+    width: 60px;
+}
+
+.footer p{
+    width: 70%;
+}
+
+
+.footer-rest a{
+    font-size: 12px;
+    margin-top: 7px;
+    text-transform: capitalize;
+}
+
+}
+
+@media (max-width:500px) {
+    .nav{
+      padding: 0 1.5rem;
+    }
+
+    .text h2{
+        font-size: 1.1rem;
+    }
+
+    .text h5{
+        font-size: 10px;
+    }
+
+    .glances{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .glance{
+        padding: 3rem 1.5rem;
+    }
+
+    .atom-content img{
+        margin-left: 5rem;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .atom-content-text{
+        padding-right: 0;
+        line-height: 1.25rem;
+        margin-bottom: 20px;
+    }
+    
+    .atom-content2 img{
+        margin-left: 5rem;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .atom-content-text2{
+        padding-left:0;
+        line-height: 1.25rem;
+        margin-top: 20px;
+    }
+    
+
+   .atom-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .atom-content2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .atom-head{
+        padding: 3rem 1.5rem;
+    }
+
+    .atom-head h3{
+        text-align: center;
+    }
+
+    .at-cards {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .atom-head-card{
+        padding: 50px;
+    }
+
+    .text2 h2{
+        font-size: 20px;
+    }
+
+    .text2 h5{
+        font-size: 12px;
+    }
+
+    .text2 button{
+        padding: 10px 12px;
+    }
+    
+.text2{
+    padding: 30px;
+}
+
+    .footer {
+        padding: 0 1.5rem;
+    }
+
+    .footer img{
+        width: 50px;
+        margin-top: 12px;
+    }
+    
+    .footer p{
+        width: 60%;
+    }
+    
+    .footer-rest h4{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .footer-rest a{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+
+
+
+/********************* second landing page***************/
